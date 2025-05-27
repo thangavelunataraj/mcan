@@ -1,0 +1,93 @@
+.dashboard {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #007fa3;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.dashboard-section-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+/* Radio buttons styled like buttons */
+.dashboard-radio-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-radio-button {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+
+.dashboard-radio-button input[type="radio"] {
+  display: none;
+}
+
+.dashboard-radio-button.active {
+  border-color: #007fa3;
+  background-color: #e6f6fb;
+}
+
+/* Dropdown row styling */
+.dashboard-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-form-row select {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  min-width: 220px;
+}
+
+/* Button styling */
+.dashboard-next-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #003d4c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dashboard-next-button:hover {
+  background-color: #005a6c;
+}
