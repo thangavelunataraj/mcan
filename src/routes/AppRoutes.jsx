@@ -6,6 +6,8 @@ import ApplicationHub from '../components/pages/ApplicationHub/ApplicationHub';
 import CustomerSearch from '../components/pages/CustomerSearch/CustomerSearch';
 import AccountSelection from '../components/pages/AccountSelection/AccountSelection';
 import ApplicantDetails from '../components/pages/ApplicantDetails/ApplicantDetails';
+import ConfirmationRegistered from '../components/pages/ConfirmationRegistered/ConfirmationRegistered';
+import SpousalRRSP from '../components/pages/SpousalRRSP/SpousalRRSP';
 
 const AppRoutes = () => {
 
@@ -38,6 +40,14 @@ const AppRoutes = () => {
       <Route
         path="/applicantdetails"
         element={<ApplicantDetails />}
+      />
+      <Route
+        path="/confirmregistrered"
+        element={<ConfirmationRegistered />}
+      />
+      <Route
+        path="/spousalrrsp"
+        element={<SpousalRRSP />}
       />
     </Routes>
   );

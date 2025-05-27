@@ -7,6 +7,7 @@ const ApplicationHub = () => {
 const navigate = useNavigate();
 const handleAddApplicant = () => {navigate('/customersearch')};
 const handleAddAccount = () => {navigate('/accountselection')};
+const handleNext = () => {navigate('/confirmregistrered')};
  // Navigate to Customer Search page when adding a new applicant
 
     // Logic to add a new applicant
@@ -62,7 +63,7 @@ const handleAddAccount = () => {navigate('/accountselection')};
 
 
 
-            <button className="next">Next</button>
+            <button className="next" onClick={handleNext}>Next</button>
         </div>
     );
 }

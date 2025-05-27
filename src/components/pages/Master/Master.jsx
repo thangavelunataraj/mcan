@@ -15,6 +15,8 @@ export default function Master() {
     navigate('/login');
   };
 
+  const handlehome = () => {navigate('/dashboard')};
+
   return (
     <nav className="navbar">
       {/* Logo */}
@@ -26,7 +28,7 @@ export default function Master() {
 
       {/* Right menu */}
       <div className="nav-icons">
-        <button className="icon-button" title="Home">
+        <button className="icon-button" title="Home" onClick={handlehome}>
           <Home size={16} className="home-icon" />
         </button>
         <span className="username">{username}</span>

@@ -1,0 +1,82 @@
+.spousal-rrsp-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.spousal-rrsp-title {
+  font-size: 24px;
+  color: #2b2b2b;
+}
+
+
+
+.spousal-rrsp-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+
+
+.contributor-section, .beneficiary-section {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+
+
+h2 {
+  font-size: 18px;
+  color: #2b2b2b;
+}
+
+
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+
+
+input[type="text"], input[type="date"], select {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+
+
+input[type="text"]:last-of-type, input[type="date"]:last-of-type, select:last-of-type {
+  margin-right: 0; /* removes margin for the last element */
+}
+
+
+
+.next-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.next-button:hover {
+  background-color: #0056b3;
+}

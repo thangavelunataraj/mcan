@@ -1,9 +1,15 @@
 import React from 'react';
 import './AccountSelection.css';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const AccountSelection = () => {
+
+    const Navigate = useNavigate();
+    const handlenext = () => {Navigate('/spousalrrsp')};
+
+
     return (
         <div className="account-selection-container">
             <h1 className="header">Account Selection</h1>
@@ -66,7 +72,7 @@ const AccountSelection = () => {
                     </select>
                 </div>
             </div>
-            <button className="next-button">Next</button>
+            <button className="next-button" onClick={handlenext}>Next</button>
         </div>
     );
 };
