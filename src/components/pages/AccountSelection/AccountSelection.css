@@ -1,76 +1,84 @@
+/* accountSelection.css */
+
 .account-selection-container {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
 }
 
-.header {
-    text-align: center;
-    color: #0056b3;
+.title {
+  text-align: center;
+  color: #004080;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.sub-header {
-    text-align: center;
-    color: #666;
-    margin-bottom: 20px;
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-.gic-selection,
-.registered-gic-details {
-    margin-bottom: 20px;
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.field, .details-field {
-    margin-bottom: 15px;
+.card h3 {
+  color: #333;
+  margin-bottom: 15px;
 }
 
-label {
-    margin-bottom: 5px;
-    display: block;
-    font-weight: bold;
+.input-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-select,
-input[type="text"],
-input[type="date"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.input-row input,
+.input-row select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-.gic-info {
-    background-color: #e9f7ff;
-    padding: 10px;
-    border-radius: 4px;
+.info-box {
+  background-color: #f2f7fb;
+  padding: 15px;
+  border-radius: 6px;
+  color: #333;
+  font-size: 14px;
 }
 
-.learn-more {
-    background-color: #0056b3;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+.info-box ul {
+  margin: 10px 0;
+  padding-left: 20px;
 }
 
-.learn-more:hover {
-    background-color: #004494;
+.info-box a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.next-button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
-.next-button:hover {
-    background-color: #218838;
+.btn-next {
+  background-color: #004080;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
 }

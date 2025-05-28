@@ -1,82 +1,66 @@
-.spousal-rrsp-container {
-  max-width: 600px;
-  margin: auto;
+/* spousalRRSP.css */
+
+.spousal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.spousal-title {
+  text-align: center;
+  color: #004080;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.spousal-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.spousal-rrsp-title {
-  font-size: 24px;
-  color: #2b2b2b;
-}
-
-
-
-.spousal-rrsp-subtitle {
-  font-size: 16px;
-  color: #6c757d;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
 }
 
-
-
-.contributor-section, .beneficiary-section {
-  margin: 20px 0;
-  padding: 15px;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
 }
 
-
-
-h2 {
-  font-size: 18px;
-  color: #2b2b2b;
-}
-
-
-
-.input-group {
+.input-row {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   margin-bottom: 15px;
 }
 
-
-
-input[type="text"], input[type="date"], select {
+.input-row input,
+.input-row select {
   flex: 1;
-  margin-right: 10px;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-
-
-input[type="text"]:last-of-type, input[type="date"]:last-of-type, select:last-of-type {
-  margin-right: 0; /* removes margin for the last element */
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
-
-
-.next-button {
-  background-color: #007bff;
+.btn-next {
+  background-color: #004080;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 6px;
   font-size: 16px;
-}
-
-
-
-.next-button:hover {
-  background-color: #0056b3;
+  cursor: pointer;
 }

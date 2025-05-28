@@ -14,7 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  useEffect(() => {localStorage.getItem('loggedIn') === 'true' && navigate('/dashboard')},[]);
+  useEffect(() => {localStorage.getItem('loggedIn') === 'true' && navigate('/dashboard')},[navigate]);
    localStorage.removeItem('users');
   // { username: 'admin1@gamil.com', password: 'admin123', roles: ['admin', 'broker'] },
   // { username: 'user1@gamil.com', password: 'user123', roles: ['user'] }

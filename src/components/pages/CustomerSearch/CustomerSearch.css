@@ -1,56 +1,85 @@
+/* customerSearch.css */
+
 .customer-search-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    color: #007fa3;
+.title {
+  text-align: center;
+  color: #0077b6;
+  font-size: 28px;
+  margin-bottom: 5px;
 }
 
-.search-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
 }
 
-input[type="text"],
-input[type="date"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-button {
-    padding: 10px 15px;
-    color: white;
-    background-color: #003d4c;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.card h3 {
+  color: #333;
+  margin-bottom: 15px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.input-grid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
-.results-table {
-    width: 100%;
-    border-collapse: collapse;
+.input-grid input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.results-table th,
-.results-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
+.btn-search {
+  background-color: #004080;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.results-table th {
-    background-color: #f1f1f1;
+.result-header,
+.result-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.result-header {
+  font-weight: bold;
+  color: #333;
+}
+
+.result-row span {
+  font-size: 14px;
+}
+
+.btn-select,
+.btn-add {
+  background-color: #004080;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }

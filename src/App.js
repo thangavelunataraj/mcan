@@ -6,7 +6,7 @@ import Master from './components/pages/Master/Master';
 function App() {
   return (
     <Router>
-      <Master/>
+      <Master/> 
       <AppRoutes />
     </Router>
   );

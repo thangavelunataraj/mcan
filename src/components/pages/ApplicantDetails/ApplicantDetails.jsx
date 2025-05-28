@@ -1,85 +1,99 @@
-import React from 'react';
-import './ApplicantDetails.css';
-
-
+import React from "react";
+import "./ApplicantDetails.css";
 
 const ApplicantDetails = () => {
-    return (
-        <div className="applicant-details">
-            <h1>Applicant Details</h1>
-            <p>Please confirm the details below are correct before proceeding with the application.</p>
+  return (
+    <div className="applicant-details-container">
+      <h1 className="title">Applicant Details</h1>
+      <p className="subtitle">
+        Please confirm the details below are correct before proceeding with the application.
+      </p>
 
+      <div className="card">
+        <h3>Identification</h3>
+        <select>
+          <option value="">Method</option>
+        </select>
+      </div>
 
-
-            <div className="section">
-                <h2>Identification</h2>
-                <select className="input-field">
-                    <option value="">Method</option>
-                    {/* Add more options here */}
-                </select>
-            </div>
-
-
-
-            <div className="section">
-                <h2>Personal information</h2>
-                <div className="input-group">
-                    <input type="text" placeholder="Legal First Name" className="input-field" />
-                    <input type="text" placeholder="Legal Last Name" className="input-field" />
-                    <input type="text" placeholder="Legal Middle Name (optional)" className="input-field" />
-                    <input type="date" placeholder="Date of Birth" className="input-field" />
-                    <input type="email" placeholder="Email" className="input-field" />
-                    <input type="text" placeholder="SIN" className="input-field" />
-                    <input type="text" placeholder="Primary #" className="input-field" />
-                </div>
-            </div>
-
-
-
-            <div className="section">
-                <h2>Address details</h2>
-                <input type="text" placeholder="Civic Address" className="input-field" />
-                <input type="text" placeholder="Mailing Address (optional)" className="input-field" />
-                <button className="manual-entry">Enter manually</button>
-            </div>
-
-
-
-            <div className="section">
-                <h2>Employment</h2>
-                <div className="input-group">
-                    <select className="input-field">
-                        <option value="">Employment Status</option>
-                        {/* Add more options here */}
-                    </select>
-                    <input type="text" placeholder="Industry" className="input-field" />
-                    <input type="text" placeholder="Occupation" className="input-field" />
-                    <input type="text" placeholder="Employer Name" className="input-field" />
-                    <input type="text" placeholder="Employer Phone" className="input-field" />
-                </div>
-            </div>
-
-
-
-            <div className="section">
-                <h2>Things we need to ask</h2>
-                <input type="text" placeholder="What is the nature of your business relationship?" className="input-field" />
-                <select className="input-field">
-                    <option value="">Are you a U.S. person?</option>
-                    {/* Add more options here */}
-                </select>
-                <input type="text" placeholder="Are you a family member, or a close associate..." className="input-field" />
-                <input type="text" placeholder="Are you a tax resident of a jurisdiction..." className="input-field" />
-                <input type="text" placeholder="Do you have an existing Client Consent form?" className="input-field" />
-            </div>
-
-
-
-            <button className="next-button">Next</button>
+      <div className="card">
+        <h3>Personal information</h3>
+        <div className="grid-3">
+          <input type="text" placeholder="Legal First Name" />
+          <input type="text" placeholder="Legal Last Name" />
+          <input type="date" placeholder="Date of Birth" />
         </div>
-    );
+        <div className="grid-3">
+          <input type="text" placeholder="Legal Middle Name (optional)" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="SIN" />
+        </div>
+        <input type="text" placeholder="Primary #" className="full-width" />
+      </div>
+
+      <div className="card">
+        <h3>Address details</h3>
+        <div className="address-row">
+          <input type="radio" name="address" />
+          <label>Civic Address</label>
+          <a href="#">Enter manually</a>
+        </div>
+        <div className="address-row">
+          <input type="radio" name="address" />
+          <label>Mailing Address (optional)</label>
+          <a href="#">Enter manually</a>
+        </div>
+      </div>
+
+      <div className="card">
+        <h3>Employment</h3>
+        <div className="grid-3">
+          <select>
+            <option>Employment Status</option>
+          </select>
+          <select>
+            <option>Industry</option>
+          </select>
+          <select>
+            <option>Occupation</option>
+          </select>
+        </div>
+        <div className="grid-2">
+          <input type="text" placeholder="Employer Name" />
+          <input type="text" placeholder="Employer Phone" />
+        </div>
+      </div>
+
+      <div className="card">
+        <h3>Things we need to ask</h3>
+        <div className="grid-2">
+          <select>
+            <option>What is the nature of your business relationship?</option>
+          </select>
+          <select>
+            <option>Are you a U.S person?</option>
+          </select>
+        </div>
+        <select className="full-width">
+          <option>
+            Are you, a family member, or a close associate a politically exposed person or the head of an international organization?
+          </option>
+        </select>
+        <select className="full-width">
+          <option>
+            Are you a tax resident of a jurisdiction other than the US or Canada?
+          </option>
+        </select>
+        <select className="full-width">
+          <option>Do you have an existing Client Consent form?</option>
+        </select>
+      </div>
+
+      <div className="button-row">
+        <button className="btn-next">Next</button>
+      </div>
+    </div>
+  );
 };
-
-
 
 export default ApplicantDetails;
